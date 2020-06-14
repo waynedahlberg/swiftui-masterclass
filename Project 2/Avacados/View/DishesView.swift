@@ -73,8 +73,10 @@ struct DishesView: View {
                 }
                 
                 Image(systemName: "heart.circle")
+                    .resizable()
                     .font(Font.title.weight(.ultraLight))
-                    .foregroundColor(Color.gray)
+                    .foregroundColor(Color.gray).opacity(0.25)
+                    .frame(width: 44, height: 44)
                 
                 HStack {
                     Divider()
@@ -145,10 +147,9 @@ struct DishesView: View {
 struct IconModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .frame(width: 42, height: 42, alignment: .center)
+            .frame(width: 44, height: 44, alignment: .center)
     }
 }
-
 
 struct DishesView_Previews: PreviewProvider {
     static var previews: some View {

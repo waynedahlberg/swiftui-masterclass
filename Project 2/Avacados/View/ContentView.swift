@@ -27,7 +27,7 @@ struct ContentView: View {
                     }
                 }
                 
-                // MARK: - DISHES
+                // MARK: - DISHES                
                 Text("Avocado Dishes")
                     .fontWeight(.bold)
                     .modifier(TitleModifier())
@@ -46,6 +46,7 @@ struct ContentView: View {
                     Text("Everything you wanted to know about avocados but were too afraid to ask.")
                         .font(.system(.body, design: .serif))
                         .foregroundColor(Color.gray)
+                        .frame(minHeight: 60)
                 }
                 .frame(maxWidth: 640)
                 .padding()
