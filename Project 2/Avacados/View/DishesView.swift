@@ -67,7 +67,7 @@ struct DishesView: View {
                 .frame(maxHeight: 220)
             }
             
-            VStack(alignment: .center, spacing: 16) {
+            VStack(alignment: .center, spacing: 4) {
                 HStack {
                     Divider()
                 }
